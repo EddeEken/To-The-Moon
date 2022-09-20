@@ -70,7 +70,11 @@ button:hover span:nth-child(2) {
     right:0px;
 }
 
-input:checked
+input:checked + button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + button span:nth-child(1)
 
 /* ------------------------------------------------ */
 /* ------------------------ ASTRONAUT ------------- */
