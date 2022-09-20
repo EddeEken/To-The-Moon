@@ -1,0 +1,66 @@
+/* ------------------------------------------------ */
+/* ------------------------ FONTS ----------------- */
+/* ------------------------------------------------ */
+
+@import
+url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap);
+
+/* ------------------------------------------------ */
+/* ------------------------ TEXT-PAGE ------------- */
+/* ------------------------------------------------ */
+
+.text-page {
+    background-color: whitesmoke;
+    top: 100%;
+    
+}
+
+.text-page {
+    background-image: url('../stars.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ TEXT-BOX -------------- */
+/* ------------------------------------------------ */
+
+.text-page .text-box {
+    position: absolute;
+    background-color: transparent;
+    left: 100px;
+    top: 50px; 
+
+
+}
+
+.text-page .text-box .heading {
+    font-size: 50px;
+}
+
+.text-page .text-box .heading .space {
+    font-family: 'Tinos';
+    
+}
+    
+.text-page .text-box .heading .ventures {
+    color: gray;
+    
+}
+
+.text-page .text-box .text-box-read-more {
+    left: 100px;
+    top: 50px;
+    font-family: 'Rubik';
+
+}
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------ */
+/* ------------------------ MOBILE ---------------- */
+/* ------------------------------------------------ */

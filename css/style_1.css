@@ -1,0 +1,153 @@
+/* ------------------------------------------------ */
+/* ------------------------ FONTS ----------------- */
+/* ------------------------------------------------ */
+
+@import
+url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap);
+
+/* ------------------------------------------------ */
+/* ------------------------ HELPERS --------------- */
+/* ------------------------------------------------ */
+
+
+body {
+    background-color: white;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: whitesmoke;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ LAYOUT ---------------- */
+/* ------------------------------------------------ */
+.full-height {
+    min-height: 100vh;
+}
+
+.astronaut {
+    background-color: whitesmoke;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ BUTTON ---------------- */
+/* ------------------------------------------------ */
+
+button {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 15px;
+    right: 25px;
+    position: fixed;
+}
+    
+
+button span {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: block;
+    background-color: black;
+    position: relative;
+    right: 0;
+    transition: all 0.35s ease-in-out;
+}
+
+/* ------------------------------------------------ */
+/* --------------- BUTTON ANIMATIONS -------------- */
+/* ------------------------------------------------ */
+
+button span:nth-child(2) {
+    right: 4px;
+}
+button:hover span:nth-child(2) {
+    right:0px;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ ASTRONAUT ------------- */
+/* ------------------------------------------------ */
+.astronaut {
+    background-image: url('../adam-miller-unsplash.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.astronaut .heading-box {
+    border: 4px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 9rem;
+    top: 60px;
+    left: 50px;
+    padding: 15px;
+    font-family: 'Rubik';
+}
+
+.astronaut .heading-box .text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 800px) {
+    .astronaut .heading-box {
+        width: 15rem;
+    }
+    .astronaut .heading-box .link {
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .astronaut .heading-box .link span {
+        position: relative;
+        left: 0px;
+        transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+        cursor: pointer;
+    }
+
+    .astronaut .heading-box .link:hover span {
+        left: 6px;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ DARK MODE ------------- */
+/* ------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+    .astronaut .text-page {
+        background-color: black;
+    }
+}
+
+/* ------------------------------------------------ */
+/* ------------------WHITE ARROW MOBILE-------------*/
+/* ------------------------------------------------ */
+
+
+.astronaut .arrow-down {
+color: white;
+position: absolute;
+right: 50%;
+bottom: 10px;
+font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .arrow-down {
+        visibility: hidden;
+    }
+
+}
