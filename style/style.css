@@ -373,10 +373,7 @@ button:hover span:nth-child(2) {
   right: 0px;
 }
 
-/* ------------------------------------------------ */
-/* ------------------------ ASTRONAUT ------------- */
-/* ------------------------------------------------ */
-.astronaut {
+input:checked .astronaut {
   background-image: url("../adam-miller-unsplash.jpg");
   background-size: cover;
   background-position: 50% 50%;
