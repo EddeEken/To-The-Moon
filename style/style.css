@@ -373,11 +373,27 @@ button:hover span:nth-child(2) {
   right: 0px;
 }
 
+input:checked + button span {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
 input:checked + button span:nth-child(2) {
   opacity: 0;
 }
 
-input:checked + button span:nth-child(1) .astronaut {
+input:checked + button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+input:checked + button span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ ASTRONAUT ------------- */
+/* ------------------------------------------------ */
+.astronaut {
   background-image: url("../adam-miller-unsplash.jpg");
   background-size: cover;
   background-position: 50% 50%;
