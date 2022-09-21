@@ -23,6 +23,7 @@ body {
 /* ------------------------------------------------ */
 /* ------------------------ LAYOUT ---------------- */
 /* ------------------------------------------------ */
+
 .full-height {
     min-height: 100vh;
 }
@@ -41,14 +42,15 @@ button {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    top: 15px;
-    right: 25px;
+    top: 25px;
+    right: 20px;
     position: fixed;
+    z-index: 2;
+    pointer-events: none;
 }
-    
 
 button span {
-    width: 40px;
+    width: 35px;
     height: 5px;
     margin-bottom: 5px;
     border-radius: 4px;
@@ -57,6 +59,15 @@ button span {
     position: relative;
     right: 0;
     transition: all 0.35s ease-in-out;
+}
+input {
+    position: fixed;
+    top: 25px;
+    right: 18px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
 }
 
 /* ------------------------------------------------ */
@@ -70,30 +81,39 @@ button:hover span:nth-child(2) {
     right:0px;
 }
 
-input:checked + button span {
+input:checked + .menu button span {
     position: absolute;
     transition: all 0.3s ease-in-out;
-
 }
 
-input:checked + button span:nth-child(2) {
+input:checked + .menu button span:nth-child(2) {
     opacity: 0;
 }
 
-input:checked + button span:nth-child(1) {
+input:checked + .menu button span:nth-child(1) {
     transform: rotate(45deg);
 }
 
-input:checked + button span:nth-child(3) {
+input:checked + .menu button span:nth-child(3) {
     transform: rotate(-45deg);
 }
 
 nav {
     position: fixed;
+    top:0;
+    left:0;
     background-color: whitesmoke;
-    opacity: 70%;
+    opacity: 0;
+    transition: all 0,7s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 100vw;
     height: 100vh;
+    visibility: hidden;
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    display: block; 
+    opacity: 70%;
 }
 
 ul {
@@ -107,9 +127,20 @@ ul {
     text-align: center;
 }
 
+li {
+    text-transform: uppercase;
+    font-family: 'rubik';
+    font-size: 2rem;
+    border-bottom: width 2px;
+    border-color: #de466c;
+    border-width: 10px;
+    cursor: pointer;
+}
+
 /* ------------------------------------------------ */
 /* ------------------------ ASTRONAUT ------------- */
 /* ------------------------------------------------ */
+
 .astronaut {
     background-image: url('../adam-miller-unsplash.jpg');
     background-size: cover;
@@ -163,6 +194,7 @@ ul {
 /* ------------------------------------------------ */
 /* ------------------------ DARK MODE ------------- */
 /* ------------------------------------------------ */
+
 @media (prefers-color-scheme: dark) {
     .astronaut .text-page {
         background-color: black;
@@ -172,7 +204,6 @@ ul {
 /* ------------------------------------------------ */
 /* ------------------WHITE ARROW MOBILE-------------*/
 /* ------------------------------------------------ */
-
 
 .astronaut .arrow-down {
 color: white;
