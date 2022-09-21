@@ -1,31 +1,11 @@
 /* ------------------------------------------------ */
-/* ------------------------ FONTS ----------------- */
-/* ------------------------------------------------ */
-
-@import
-url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap);
-
-/* ------------------------------------------------ */
 /* ------------------------ TEXT-PAGE ------------- */
 /* ------------------------------------------------ */
 
-.text-page {
-    background-color: whitesmoke;
-    top: 100%;
-    
-}
-
-.text-page {
-    background-image: url('../stars.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-/*TEXTPAGE*/
 .textPage{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/space.jpg');
-    background-size:cover;
-    color:white;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    color: white;
     font-family:"Rubik", sans-serif;
 }
 .textPage .wrapper{
@@ -99,7 +79,11 @@ url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap);
 .arrow{
     font-size:1.5rem;
 }
-/*FOOTER*/
+
+/* ------------------------------------------------ */
+/* ------------------------ FOOTER ---------------- */
+/* ------------------------------------------------ */
+
 footer{
     background-color:#000E1B;
     color:#fff;
@@ -115,29 +99,12 @@ footer section{
     display:flex;
     justify-content:space-between;
 }
-/*DESKTOP*/
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+
 @media screen and (min-width:800px){
-    .hamburgerMenu:hover span:nth-child(2){
-            right:4px;
-    }
-    .astronaut .headingBox{
-            width:15rem;
-    }
-    .astronaut .headingBox .headerLink{
-            text-align:right;
-    }
-    .astronaut .headingBox .headerLink span{
-            position:relative;
-            left:0;
-            transition:left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
-    }
-    .astronaut .headingBox .headerLink:hover span{
-            left:10px;
-    }
-    .textPage{
-            background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/spaceRot.jpg');
-            background-size:cover;
-    }
     .textPage .wrapper{
             display:flex;
     }
@@ -176,13 +143,12 @@ footer section{
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;
             background-clip:text;
-            text-fill-color:transparent;
             opacity:0.3;
             padding:40px 0;
             width:400px;
     }
     .majorTom{
-            background-image:url("../img/major_tom.jpg");
+            background-image:url('../major_tom.jpg');
             background-size:85px 135px;
             width:85px;
             height:135px;
